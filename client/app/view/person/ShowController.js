@@ -15,11 +15,11 @@ Ext.define('App.view.person.ShowController', {
         coworkers.removeAll();
 
         if (record) {
-            history.filter('recipient_id', record.get('id'));
+            history.filter('recipientId', record.get('id'));
             history.load();
 
             coworkers.filter([
-                { property: 'organization_id', value: record.get('organization_id') },
+                { property: 'organizationId', value: record.get('organizationId') },
                 { property: 'id', value: record.get('id'), operator: '!=' }
             ]);
 

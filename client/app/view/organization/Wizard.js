@@ -36,7 +36,7 @@ Ext.define('App.view.organization.Wizard', {
             forceSelection: true,
             required: true,
             bind: {
-                value: '{record.manager_id}',
+                value: '{record.managerId}',
                 store: '{managers}'
             }
         }]

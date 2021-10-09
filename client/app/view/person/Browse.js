@@ -3,10 +3,10 @@ Ext.define('App.view.person.Browse', {
 
     fields: {
         office: {
-            property: 'office_id'
+            property: 'person.office_id'
         },
         organization: {
-            property: 'organization_id'
+            property: 'person.organization_id'
         }
     },
 

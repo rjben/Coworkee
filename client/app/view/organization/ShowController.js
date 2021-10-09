@@ -8,8 +8,9 @@ Ext.define('App.view.organization.ShowController', {
             history = vm.getStore('history');
 
         if (record) {
-            people.filter('organization_id', record.get('id'));
-            history.filter('recipient.organization_id', record.get('id'));
+            console.log(record)
+            people.filter('organizationId', record.get('id'));
+            history.filter('recipient.organizationId', record.get('id'));
         } else {
             people.removeAll();
             history.removeAll();

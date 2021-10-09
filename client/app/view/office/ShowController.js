@@ -9,8 +9,8 @@ Ext.define('App.view.office.ShowController', {
             markers = vm.getStore('markers');
 
         if (record) {
-            people.filter('office_id', record.get('id'));
-            history.filter('recipient.office_id', record.get('id'));
+            people.filter('officeId', record.get('id'));
+            history.filter('recipient.officeId', record.get('id'));
             markers.loadRecords(record);
         } else {
             people.removeAll();

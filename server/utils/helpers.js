@@ -125,7 +125,7 @@ var Helpers = {
         }
 
         var sequelize = model.sequelize;
-        var column = field in model.attributes? field : sequelize.col(field);
+        var column = sequelize.col(field);
         var label = this.sequelizeConcat([].concat(params.label || field), sequelize);
         var query = this.sequelizify(params, model, Object.assign(defaults || {}, {
             attributes: [[label, 'label'], [column, 'value']],

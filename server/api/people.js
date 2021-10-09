@@ -22,8 +22,8 @@ function writableFields(params) {
         'birthday',
         'started',
         'ended',
-        'office_id',
-        'organization_id'
+        'officeId',
+        'organizationId'
     ]);
 }
 
@@ -116,6 +116,7 @@ var Service = {
             }
 
             return models.sequelize.transaction(function(t) {
+                console.log(t)
                 return row.update(writableFields(params), {
                     transaction: t
                 }).then(function(row) {

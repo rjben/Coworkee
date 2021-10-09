@@ -8,7 +8,7 @@ var models = require('../models');
 function writableFields(params) {
     return helpers.extractFields(params, [
         'name',
-        'manager_id'
+        'managerId'
     ]);
 }
 
