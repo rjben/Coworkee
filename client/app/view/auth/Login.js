@@ -27,15 +27,18 @@ Ext.define('App.view.auth.Login', {
         items: [{
             xtype: 'textfield',
             name: 'username',
+            testId: 'userNameInputLogin',
             placeholder: 'Username',
             required: true
         }, {
             xtype: 'passwordfield',
             name: 'password',
+            testId: 'userPasswordLogin',
             placeholder: 'Password',
             required: true
         }, {
             xtype: 'button',
+            testId: 'logInButton',
             text: 'LOG IN',
             iconAlign: 'right',
             iconCls: 'x-fa fa-angle-right',

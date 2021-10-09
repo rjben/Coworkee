@@ -12,6 +12,7 @@ Ext.define('App.view.widgets.BrowseToolbar', {
 
     items: {
         search: {
+            testId: 'searchField',
             xtype: 'searchfield',
             reference: 'search',
             placeholder: 'Search',
@@ -20,12 +21,14 @@ Ext.define('App.view.widgets.BrowseToolbar', {
             weight: 0
         },
         refresh: {
+            testId: 'refreshButton',
             iconCls: 'x-fa fa-refresh',
             handler: 'onRefreshTap',
             tooltip: 'Refresh',
             weight: 30
         },
         clear: {
+            testId: 'clearFilter',
             iconCls: 'x-fa fa-undo',
             handler: 'onClearFiltersTap',
             tooltip: 'Clear Filters',

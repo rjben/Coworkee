@@ -22,6 +22,7 @@ Ext.define('App.view.main.Menu', {
         },
         navigator: {
             xtype: 'dataview',
+            testId: 'navigator',
             scrollable: 'y',
             store: 'Menu',
             weight: 0,
@@ -31,7 +32,7 @@ Ext.define('App.view.main.Menu', {
                 deselectable: false
             },
             itemTpl: [
-                '<span class="icon x-fa fa-{icon}"></span>',
+                '<span test-id="{testId}" class="icon x-fa fa-{icon}"></span>',
                 '<span class="text">{text}</span>'
             ],
             listeners: {

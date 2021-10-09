@@ -13,6 +13,7 @@ Ext.define('App.view.tablet.organization.Browse', {
     },
 
     items: [{
+        testId: 'organizationGrid',
         xtype: 'grid',
         emptyText: 'No organization was found to match your search',
         bind: '{organizations}',

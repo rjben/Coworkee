@@ -7,6 +7,7 @@ Ext.define('App.view.home.HomeHeader', {
 
     items: [{
         xtype: 'component',
+        testId: 'textHeaderGreeting',
         cls: 'header-message',
         tpl: [
             '<div class="text">',

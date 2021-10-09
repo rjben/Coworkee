@@ -6,6 +6,8 @@ Ext.define('App.view.organization.Wizard', {
         'organizationedit'
     ],
 
+    testId: 'organizationCreateModal',
+
     controller: {
         type: 'organizationwizard'
     },
@@ -22,6 +24,7 @@ Ext.define('App.view.organization.Wizard', {
         title: 'General',
         iconCls: 'x-fa fa-info',
         items: [{
+            testId: 'organisationNameInput',
             xtype: 'textfield',
             reference: 'name',
             label: 'Name',
@@ -29,6 +32,7 @@ Ext.define('App.view.organization.Wizard', {
             bind: '{record.name}'
         }, {
             xtype: 'combobox',
+            testId: 'managerCombobox',
             label: 'Manager',
             displayField: 'label',
             valueField: 'value',

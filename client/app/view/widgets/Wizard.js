@@ -79,6 +79,7 @@ Ext.define('App.view.widgets.Wizard', {
                     },
 
                     submit: {
+                        testId: 'submitCreateForm',
                         reference: 'submit',
                         handler: 'onSubmitTap',
                         weight: 20,
@@ -89,6 +90,7 @@ Ext.define('App.view.widgets.Wizard', {
                     },
 
                     cancel: {
+                        testId: 'cancelForm',
                         reference: 'cancel',
                         handler: 'onCancelTap',
                         text: 'Cancel',

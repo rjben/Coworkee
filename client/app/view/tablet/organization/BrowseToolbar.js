@@ -4,6 +4,7 @@ Ext.define('App.view.tablet.organization.BrowseToolbar', {
 
     items: {
         managers: {
+            testId: 'managersCombobox',
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
@@ -16,6 +17,7 @@ Ext.define('App.view.tablet.organization.BrowseToolbar', {
             }
         },
         create: {
+            testId: 'createOrganizationButton',
             xtype: 'button',
             iconCls: 'x-fa fa-plus',
             handler: 'onCreate',

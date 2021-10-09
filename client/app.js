@@ -6,7 +6,9 @@
 Ext.application({
     name: 'App',
 
-    extend: 'App.Application'
+    extend: 'App.Application',
+
+    requires: ['App.overrides.Component'],
 
     //-------------------------------------------------------------------------
     // Most customizations should be made to App.Application. If you need to
