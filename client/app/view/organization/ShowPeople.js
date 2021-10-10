@@ -26,7 +26,7 @@ Ext.define('App.view.organization.ShowPeople', {
         ui: 'thumbnails',
         minHeight: 80,
         inline: true,
-        emptyText: 'This organization is empty',
+        emptyText: '<span data-cy="emptyOrganization">This organization is empty</span>',
         itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
         listeners: {
             childtap: 'onPeopleChildTap'

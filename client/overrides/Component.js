@@ -6,7 +6,7 @@ Ext.define('App.overrides.Component', {
         const el = this.el;
         const testId =  this.testId || this.itemId || '';
         if (el && el.dom && !Ext.isEmpty(testId) && Ext.isEmpty(this.inputAttrTpl)) {
-            const attId = this.cyAtt || 'test-id';
+            const attId = this.cyAtt || 'data-cy';
             el.dom.setAttribute(attId, testId);
         }
     },

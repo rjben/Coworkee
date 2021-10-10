@@ -32,7 +32,7 @@ Ext.define('App.view.main.Menu', {
                 deselectable: false
             },
             itemTpl: [
-                '<span test-id="{testId}" class="icon x-fa fa-{icon}"></span>',
+                '<span data-cy="{testId}" class="icon x-fa fa-{icon}"></span>',
                 '<span class="text">{text}</span>'
             ],
             listeners: {
